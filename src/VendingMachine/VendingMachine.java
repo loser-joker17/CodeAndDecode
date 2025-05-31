@@ -17,8 +17,8 @@ public class VendingMachine {
         System.out.println("\nAvailable Items:");
         for (ItemShelf shelf : selves.values()) {
             Items item = shelf.getItems();
-            System.out.println("Code: " + shelf.getCode()
-                    + " | Item: " + item.getName()
+            System.out.println(
+                    " | Item: " + item.getName()
                     + " | Price: " + item.getPrice()
                     + " | Qty: " + shelf.getQuantity()
                     + (shelf.isSoldOut() ? " (Sold Out)" : ""));
@@ -42,7 +42,7 @@ public class VendingMachine {
         }
         if(InsertedAmount==itemShelf.getItems().getPrice()) {
             itemShelf.dispense();
-            System.out.println("Dispensed " + itemShelf.getItems().getName());
+            System.out.println("Dispensed Item" + itemShelf.getItems().getName());
         }else {
             System.out.println("Please insert exact amount: " + itemShelf.getItems().getPrice()
                     + " | You inserted: " + InsertedAmount);
