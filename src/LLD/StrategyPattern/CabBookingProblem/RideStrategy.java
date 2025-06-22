@@ -1,4 +1,4 @@
-package LLD.StrategyPattern;
+package LLD.StrategyPattern.CabBookingProblem;
 
 public interface RideStrategy {
 

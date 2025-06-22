@@ -1,15 +1,15 @@
-package LLD.StrategyPattern;
+package LLD.StrategyPattern.CabBookingProblem;
 
-public class miniCab implements RideStrategy{
-
+public class Auto implements RideStrategy {
     @Override
     public String getRideType() {
-        return "miniCab";
+        return "Auto";
     }
     @Override
     public double calculateFare(double distanceInKm , double timeInMin){
         double baseFare = 5;     // per km
         double perMin = 1;       // per min
-        return 30 + (baseFare * distanceInKm) + (perMin * timeInMin);
+
+        return 10 + (baseFare * distanceInKm) + (perMin * timeInMin);
     }
 }

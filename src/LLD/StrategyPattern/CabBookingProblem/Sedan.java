@@ -1,15 +1,15 @@
-package LLD.StrategyPattern;
+package LLD.StrategyPattern.CabBookingProblem;
 
-public class Auto implements RideStrategy{
+public class Sedan implements RideStrategy {
+
     @Override
     public String getRideType() {
-        return "Auto";
+        return "SedanCar";
     }
     @Override
     public double calculateFare(double distanceInKm , double timeInMin){
         double baseFare = 5;     // per km
         double perMin = 1;       // per min
-
-        return 10 + (baseFare * distanceInKm) + (perMin * timeInMin);
+        return 40 + (baseFare * distanceInKm) + (perMin * timeInMin);
     }
 }

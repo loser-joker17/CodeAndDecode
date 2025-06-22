@@ -1,4 +1,4 @@
-package LLD.StrategyPattern;
+package LLD.StrategyPattern.CabBookingProblem;
 
 public class RideClient {
     public static void main(String[] args){
